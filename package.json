@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@standard-crypto/farcaster-js": "^5.5.1",
+    "ethers": "^5.7.2",
+    "dotenv": "^16.0.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "fetch": "tsc && node ./dist/follow-burst.js",
+    "unfollow": "tsc && node ./dist/unfollow-inactive.js",
+    "key": "tsc && node ./dist/generate-private-key.js"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ethers-typescript-typings": "^0.0.4",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.5"
+  }
+}
